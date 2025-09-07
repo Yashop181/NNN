@@ -25,9 +25,9 @@ body {
 
 /* Logo */
 .logo img {
-  height: clamp(40px, 8vh, 70px); /* scales dynamically */
+  height: clamp(55px, 10vh, 90px); /* increased size */
   width: auto;
-  max-width: 160px;
+  max-width: 200px; /* allow a wider logo */
 }
 
 /* Nav links (desktop) */
@@ -446,18 +446,39 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Ways to Give */
+/* Donation Section */
+.donation-section {
+  background: #fff8fb; /* very light pink background */
+  padding: 60px 20px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Heading */
+.donation-section h3 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* List */
 .ways-to-give {
   list-style: disc;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 30px;
-  padding-left: 20px;
+  padding-left: 40px;
   text-align: left;
-  color: #555;
+  color: #444;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .ways-to-give li {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .ways-to-give a {
@@ -469,6 +490,45 @@ body {
 .ways-to-give a:hover {
   text-decoration: underline;
 }
+.donation-section h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #d4145a;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+/* Message */
+.donate-msg {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Button */
+.donate-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #d4145a;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.donate-btn:hover {
+  background: #b1124c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+
 
 /* Donate Button */
 .donate-btn {
@@ -507,6 +567,15 @@ body {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+}
+.join-us h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #d4145a;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 /* Footer */
 /* Footer */
@@ -560,4 +629,33 @@ body {
     flex-direction: column;
     gap: 12px;
   }
+}
+
+
+#whatwedo h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #d4145a;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+#mission h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #d4145a;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+#about h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #d4145a;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }

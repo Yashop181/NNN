@@ -1,10 +1,20 @@
 // Toggle menu on mobile
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
+const navItems = document.querySelectorAll(".nav-links li a");
 
+// Toggle menu on hamburger click
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+// Close menu when a link is clicked (mobile)
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
 // Counter Animation
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
