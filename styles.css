@@ -75,10 +75,10 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 794px) {
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 120px;
     left: 0;
     background: #fff; /* white mobile menu */
     flex-direction: column;
