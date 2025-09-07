@@ -170,6 +170,38 @@ body {
   background: #f1f1f1;
 }
 
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    border-radius: 8px;
+    margin-bottom: 12px; /* 👈 adds gap between stacked buttons */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* remove the margin from the last button so it doesn't push extra space */
+  .hero-buttons a:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #d4145a, #f26a8d);
+    color: white;
+  }
+
+  .btn-secondary {
+    background: white;
+    color: #222;
+    border: 2px solid #f26a8d;
+  }
+}
 
 
 
