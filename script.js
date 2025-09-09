@@ -50,3 +50,62 @@ document.addEventListener("DOMContentLoaded", () => {
   const highlightsSection = document.getElementById("highlights");
   observer.observe(highlightsSection);
 });
+
+
+
+
+const slide = document.querySelector('.carousel-slide');
+const items = document.querySelectorAll('.carousel-item');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let index = 0;
+const size = items[0].clientWidth;
+
+// Move to next slide
+function nextSlide() {
+  index++;
+  if (index >= items.length) index = 0;
+  updateCarousel();
+}
+
+// Move to previous slide
+function prevSlide() {
+  index--;
+  if (index < 0) index = items.length - 1;
+  updateCarousel();
+}
+
+// Update slide position
+function updateCarousel() {
+  slide.style.transform = `translateX(${-index * 100}%)`;
+}
+
+// Button click events
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// Auto slide every 4s
+setInterval(nextSlide, 4000);
+
+
+// Get elements
+const lightbox = document.getElementById("lightbox");
+const lightboxVideo = document.getElementById("lightboxVideo");
+const closeBtn = document.querySelector(".lightbox .close");
+
+// Open video in lightbox
+document.querySelectorAll(".video-item video").forEach(video => {
+  video.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxVideo.src = video.src;
+    lightboxVideo.play();
+  });
+});
+
+// Close lightbox
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+  lightboxVideo.pause();
+  lightboxVideo.src = "";
+});

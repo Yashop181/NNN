@@ -149,24 +149,78 @@
   <p class="media-intro">
     Explore some highlights from our performances — costumes, stage lighting, group shots, and candid rehearsals.
   </p>
-  <div class="media-grid">
-    <!-- Images -->
-    <img src="https://via.placeholder.com/400x250" alt="Costume Shot 1">
-    <img src="https://via.placeholder.com/400x250" alt="Performance Shot 2">
-    <img src="https://via.placeholder.com/400x250" alt="Stage Lighting 3">
-    <img src="https://via.placeholder.com/400x250" alt="Group Shot 4">
-    <img src="https://via.placeholder.com/400x250" alt="Candid Rehearsal 5">
-    <img src="https://via.placeholder.com/400x250" alt="Costume Shot 6">
-    <!-- Videos -->
-    <video controls>
-      <source src="sample-video1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <video controls>
-      <source src="sample-video2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<section class="carousel-section">
+  <h2>Gallery & Performances</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-slide">
+
+      <div class="carousel-item">
+        <img src="images/two.jpg" alt="Dance Performance 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/three.jpg" alt="Dance Performance 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/four.jpg" alt="Dance Performance 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/five.jpg" alt="Dance Performance 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/six.jpg" alt="Dance Performance 3">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/eight.jpg" alt="Dance Performance 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/nine.JPG" alt="Dance Performance 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/ten.JPG" alt="Dance Performance 3">
+      </div>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
   </div>
+</section>
+<section class="video-gallery" id="videos">
+  <h2>Our Performances</h2>
+  <div class="video-grid">
+    <!-- Video 1 -->
+    <div class="video-item">
+      <video src="videos/elev.mp4" controls muted></video>
+    </div>
+    <!-- Video 2 -->
+    <div class="video-item">
+      <video src="videos/twel.MP4" controls muted></video>
+    </div>
+    <!-- Video 3 -->
+    <div class="video-item">
+      <video src="videos/thir.MP4" controls muted></video>
+    </div>
+    <!-- Video 4 -->
+    <div class="video-item">
+      <video src="videos/four.MP4" controls muted></video>
+    </div>
+    <!-- Video 5 -->
+    <div class="video-item">
+      <video src="videos/fift.mp4" controls muted></video>
+    </div>
+    <!-- Video 6 -->
+    <div class="video-item">
+      <video src="videos/sixt.MP4" controls muted></video>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <video id="lightboxVideo" controls autoplay></video>
+</div>
+
+
 </section>
 <section class="support" id="support">
   <h2>Support Us / Donate</h2>
